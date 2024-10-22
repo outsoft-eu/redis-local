@@ -1,0 +1,35 @@
+spring:
+  data:
+    redis:
+      host: ${redis.url}
+      port: ${redis.port}
+      timeout: PT3S
+      connect-timeout: PT1S
+      lettuce:
+        pool:
+          min-idle: 3
+          max-active: 5
+          maxWait: PT1S
+          timeBetweenEvictionRuns: PT1H
+
+redisLocalCache:
+  configs:
+    testCacheLowTtl:
+      name: testCacheLowTtl
+      expireAfterWrite: PT2S
+      maximumLocalSize: 10
+      initialLocalCapacity: 1
+    testCache:
+      name: testCache
+      expireAfterWrite: PT1H
+      maximumLocalSize: 10
+      initialLocalCapacity: 1
+    testCacheSameName:
+      name: testCache
+      expireAfterWrite: PT1H
+      maximumLocalSize: 10
+      initialLocalCapacity: 1
+
+logging:
+  level:
+    com: TRACE
