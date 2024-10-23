@@ -14,6 +14,7 @@ import org.springframework.cache.CacheManager
 import org.springframework.cache.annotation.EnableCaching
 import org.springframework.cache.interceptor.CacheResolver
 import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Import
 import org.springframework.core.env.Environment
 import org.springframework.core.io.ResourceLoader
 import org.springframework.data.redis.cache.RedisCacheConfiguration
@@ -23,6 +24,7 @@ import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactor
 @AutoConfiguration
 @ConditionalOnProperty("redisLocalCache.enabled", havingValue = "true", matchIfMissing = true)
 @EnableConfigurationProperties(value = [RedisLocalCacheProperties::class, CacheProperties::class])
+@Import(value = [LettuceKeepAliveConfiguration::class])
 @EnableCaching
 class RedisLocalCacheAutoConfiguration {
 
