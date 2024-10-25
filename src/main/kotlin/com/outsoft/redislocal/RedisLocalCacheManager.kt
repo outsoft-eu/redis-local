@@ -85,10 +85,6 @@ class RedisLocalCacheManager(
     override fun getPhase(): Int = START_PHASE
 
     companion object {
-        /**
-         * Start before [org.springframework.cloud.stream.binding.InputBindingLifecycle] in order to provide the cache
-         * before any events consumed from kafka.
-         */
         private const val START_PHASE = Integer.MAX_VALUE - 1001
         const val NAME = "redisLocalCacheManager"
         const val CACHE_RESOLVER_NAME = "propertyBasedRedisLocalCacheResolver"
