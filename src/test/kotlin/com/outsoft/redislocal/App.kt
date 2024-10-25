@@ -1,4 +1,4 @@
-package com.redislocalcache
+package com.outsoft.redislocal
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

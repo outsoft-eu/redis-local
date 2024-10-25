@@ -1,4 +1,4 @@
-package com.redislocalcache
+package com.outsoft.redislocal
 
 import java.time.Duration
 

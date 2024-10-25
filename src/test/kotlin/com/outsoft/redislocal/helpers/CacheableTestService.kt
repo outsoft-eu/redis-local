@@ -1,6 +1,6 @@
-package com.redislocalcache.helpers
+package com.outsoft.redislocal.helpers
 
-import com.redislocalcache.RedisLocalCacheManager
+import com.outsoft.redislocal.RedisLocalCacheManager
 import java.io.Serializable
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.cache.annotation.CacheEvict

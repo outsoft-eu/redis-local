@@ -1,4 +1,4 @@
-package com.redislocalcache.configuration.properties
+package com.outsoft.redislocal.configuration.properties
 
 import java.time.Duration
 import org.springframework.boot.context.properties.ConfigurationProperties

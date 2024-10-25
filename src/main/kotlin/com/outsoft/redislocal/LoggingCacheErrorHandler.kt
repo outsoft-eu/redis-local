@@ -1,4 +1,4 @@
-package com.redislocalcache
+package com.outsoft.redislocal
 
 import mu.KotlinLogging
 import org.springframework.cache.Cache

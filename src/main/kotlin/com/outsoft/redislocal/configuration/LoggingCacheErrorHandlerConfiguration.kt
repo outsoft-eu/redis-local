@@ -1,6 +1,6 @@
-package com.redislocalcache.configuration
+package com.outsoft.redislocal.configuration
 
-import com.redislocalcache.LoggingCacheErrorHandler
+import com.outsoft.redislocal.LoggingCacheErrorHandler
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.cache.annotation.CachingConfigurer
 import org.springframework.cache.interceptor.CacheErrorHandler

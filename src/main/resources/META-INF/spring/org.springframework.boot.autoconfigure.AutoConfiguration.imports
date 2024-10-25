@@ -1,1 +1,1 @@
-com.redislocalcache.configuration.RedisLocalCacheAutoConfiguration
+com.outsoft.redislocal.configuration.RedisLocalCacheAutoConfiguration

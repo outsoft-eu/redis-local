@@ -1,6 +1,6 @@
-package com.redislocalcache.configuration
+package com.outsoft.redislocal.configuration
 
-import com.redislocalcache.configuration.properties.RedisKeepaliveOptionProperties
+import com.outsoft.redislocal.configuration.properties.RedisKeepaliveOptionProperties
 import io.lettuce.core.ClientOptions
 import io.lettuce.core.SocketOptions
 import io.lettuce.core.TimeoutOptions

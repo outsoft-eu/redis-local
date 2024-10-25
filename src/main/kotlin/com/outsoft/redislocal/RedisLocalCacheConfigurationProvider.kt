@@ -1,6 +1,6 @@
-package com.redislocalcache
+package com.outsoft.redislocal
 
-import com.redislocalcache.configuration.properties.RedisLocalCacheProperties
+import com.outsoft.redislocal.configuration.properties.RedisLocalCacheProperties
 import java.time.Duration
 import org.springframework.beans.factory.ObjectProvider
 import org.springframework.boot.autoconfigure.cache.CacheProperties
@@ -9,7 +9,7 @@ import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer
 import org.springframework.data.redis.serializer.RedisSerializationContext
 
 class RedisLocalCacheConfigurationProvider(
-    val redisLocalCacheProperties: RedisLocalCacheProperties,
+    private val redisLocalCacheProperties: RedisLocalCacheProperties,
     private val cacheProperties: CacheProperties,
     private val classLoader: ClassLoader,
     private val redisCacheConfigurationProvider: ObjectProvider<RedisCacheConfiguration>,

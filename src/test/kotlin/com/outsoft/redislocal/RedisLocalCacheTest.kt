@@ -1,12 +1,12 @@
-package com.redislocalcache
+package com.outsoft.redislocal
 
 import com.ninjasquad.springmockk.MockkBean
-import com.redislocalcache.configuration.properties.RedisLocalCacheProperties
-import com.redislocalcache.helpers.CacheValue
-import com.redislocalcache.helpers.CacheValueProvider
-import com.redislocalcache.helpers.CacheableTestService
-import com.redislocalcache.helpers.sleep
-import com.redislocalcache.helpers.waitUntilAssertion
+import com.outsoft.redislocal.configuration.properties.RedisLocalCacheProperties
+import com.outsoft.redislocal.helpers.CacheValue
+import com.outsoft.redislocal.helpers.CacheValueProvider
+import com.outsoft.redislocal.helpers.CacheableTestService
+import com.outsoft.redislocal.helpers.sleep
+import com.outsoft.redislocal.helpers.waitUntilAssertion
 import io.mockk.every
 import io.mockk.verify
 import org.assertj.core.api.Assertions.assertThat

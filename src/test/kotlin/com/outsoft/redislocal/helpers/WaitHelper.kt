@@ -1,4 +1,4 @@
-package com.redislocalcache.helpers
+package com.outsoft.redislocal.helpers
 
 import java.time.Duration
 import java.util.concurrent.TimeUnit

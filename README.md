@@ -17,7 +17,7 @@ To add this library to your project, use one of the following methods:
 For Maven:
 ```xml
 <dependency>
-    <groupId>com</groupId>
+    <groupId>com.outsoft</groupId>
     <artifactId>redis-local-cache</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -26,7 +26,7 @@ For Maven:
 For Gradle:
 
 ```groovy
-implementation 'com:redis-local-cache:1.0.0'
+implementation 'com.outsoft:redis-local-cache:1.0.0'
 ```
 
 ## Configuration
@@ -70,16 +70,16 @@ Example of usage with Spring's caching annotations to interact with the local ca
 ```kotlin
 @Service
 class CacheableTestService(
-    private val valueProvider: ValueProvider?
+    private val valueProvider: ValueProvider
 ) {
 
     @Cacheable("${redisLocalCache.configs.testCache.name}", cacheResolver = RedisLocalCacheManager.CACHE_RESOLVER_NAME)
-    fun getValueFromTestCache(key: String): CacheValue? =
-        valueProvider?.get(key)
+    fun getValueFromTestCache(key: String): CacheValue =
+        valueProvider.get(key)
 
     @CachePut("${redisLocalCache.configs.testCache.name}", cacheResolver = RedisLocalCacheManager.CACHE_RESOLVER_NAME)
-    fun putValueToTestCache(key: String): CacheValue? =
-        valueProvider?.get(key)
+    fun putValueToTestCache(key: String): CacheValue =
+        valueProvider.get(key)
 
     @CacheEvict("${redisLocalCache.configs.testCache.name}", cacheResolver = RedisLocalCacheManager.CACHE_RESOLVER_NAME)
     fun evictTestCache(key: String) {
@@ -119,7 +119,7 @@ spring:
 The following versions of dependencies are used in this lib:
 
 - **Spring Boot**: `3.0.4`
-- **Java**: `1.7.22`
+- **JDK**: `17`
 - **Kotlin**: `1.7.22`
 - **Guava**: `32.1.3-jre`
 - **Caffeine**: `3.1.8`

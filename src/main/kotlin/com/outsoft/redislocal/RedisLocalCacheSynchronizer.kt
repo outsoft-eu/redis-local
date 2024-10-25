@@ -1,4 +1,4 @@
-package com.redislocalcache
+package com.outsoft.redislocal
 
 import com.github.benmanes.caffeine.cache.Cache
 import com.google.common.util.concurrent.Striped

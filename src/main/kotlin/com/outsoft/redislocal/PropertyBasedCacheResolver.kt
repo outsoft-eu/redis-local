@@ -1,4 +1,4 @@
-package com.redislocalcache
+package com.outsoft.redislocal
 
 import org.springframework.cache.CacheManager
 import org.springframework.cache.interceptor.CacheOperationInvocationContext

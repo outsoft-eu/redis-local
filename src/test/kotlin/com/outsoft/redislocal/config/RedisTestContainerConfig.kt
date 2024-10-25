@@ -1,4 +1,4 @@
-package com.redislocalcache.config
+package com.outsoft.redislocal.config
 
 import org.testcontainers.containers.GenericContainer
 

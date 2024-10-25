@@ -1,4 +1,4 @@
-package com.redislocalcache
+package com.outsoft.redislocal
 
 import io.lettuce.core.RedisChannelHandler
 import io.lettuce.core.RedisClient

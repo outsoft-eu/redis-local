@@ -1,9 +1,9 @@
-package com.redislocalcache.configuration
+package com.outsoft.redislocal.configuration
 
-import com.redislocalcache.PropertyBasedCacheResolver
-import com.redislocalcache.RedisLocalCacheConfigurationProvider
-import com.redislocalcache.RedisLocalCacheManager
-import com.redislocalcache.configuration.properties.RedisLocalCacheProperties
+import com.outsoft.redislocal.PropertyBasedCacheResolver
+import com.outsoft.redislocal.RedisLocalCacheConfigurationProvider
+import com.outsoft.redislocal.RedisLocalCacheManager
+import com.outsoft.redislocal.configuration.properties.RedisLocalCacheProperties
 import org.springframework.beans.factory.ObjectProvider
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.boot.autoconfigure.AutoConfiguration
